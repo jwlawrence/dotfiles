@@ -25,25 +25,14 @@ mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_passwor
 # Install PHP extensions with PECL
 pecl install imagick memcached redis swoole
 
-# Install global Composer packages
-/usr/local/bin/composer global require laravel/installer laravel/valet beyondcode/expose
-
-# Install Laravel Valet
-$HOME/.composer/vendor/bin/valet install
-
-# Create a Sites directory
-mkdir $HOME/Sites
-
-# Create sites subdirectories
-mkdir $HOME/Sites/blade-ui-kit
-mkdir $HOME/Sites/eventsauce
-mkdir $HOME/Sites/laravel
+# Create a dev directory
+mkdir $HOME/Development
 
 # Clone Github repositories
 ./clone.sh
 
 # Removes .zshrc from $HOME (if it exists) and symlinks the .zshrc file from the .dotfiles
-rm -rf $HOME/.zshrc
+mv $HOME/.zshrc $HOME/zshrc_backup
 ln -s $HOME/.dotfiles/.zshrc $HOME/.zshrc
 
 # Symlink the Mackup config file to the home directory
