@@ -20,21 +20,11 @@ brew 'mas' # Mac App Store manager
 brew 'pkg-config' # https://github.com/driesvints/dotfiles/issues/20
 brew 'trash' # Manage the Trash bin
 brew 'tree' # List directories in a tree structure
-brew 'zlib' # Needed for Memcached
 
 # Development
-brew 'php'
-brew 'php@7.4'
-brew 'php@7.3'
-brew 'composer'
-brew 'imagemagick'
-brew 'libmemcached'
-brew 'meilisearch'
-brew 'memcached'
 brew 'mysql'
 brew 'nginx'
 brew 'node'
-brew 'redis'
 brew 'yarn'
 
 # Apps
@@ -43,6 +33,7 @@ cask 'discord'
 cask 'docker'
 cask 'figma'
 cask 'firefox'
+cask 'flux'
 cask 'github'
 cask 'google-backup-and-sync'
 cask 'google-chrome'
@@ -50,6 +41,7 @@ cask 'gpg-suite'
 cask 'imageoptim'
 cask 'insomnia'
 cask 'iterm2'
+cask 'karabiner-elements'
 cask 'ray'
 cask 'screenflow'
 cask 'slack'

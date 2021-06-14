@@ -22,6 +22,7 @@ alias docker-composer="docker-compose"
 # Git
 alias gs="git status"
 alias gb="git branch"
+alias ga="git add ."
 alias gco="git checkout"
 alias gcob="git checkout -b"
 alias gl="git log --oneline --decorate --color"

@@ -80,6 +80,7 @@ ZSH_CUSTOM=$DOTFILES
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(dotenv git npm thefuck)
+eval $(thefuck --alias)
 
 source $ZSH/oh-my-zsh.sh
 
