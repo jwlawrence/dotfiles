@@ -26,9 +26,12 @@ brew 'mysql'
 brew 'nginx'
 brew 'node'
 brew 'yarn'
+brew 'watchman'
 
 # Apps
+cask 'breaktimer'
 cask 'caffeine'
+cask 'dashlane'
 cask 'discord'
 cask 'docker'
 cask 'figma'
